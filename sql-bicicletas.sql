@@ -28,7 +28,3 @@ INSERT INTO bicicletas(nroDeSerie, modelo, bicicleteriaId)
 	VALUES("aa1","figot",1),
 	      ("aa2","marla",2),
 	      ("a23","marla",2);
-
-SELECT cantVentas, ganancias, COUNT(bic.nroDeSerie) AS "cantBici Venta" FROM bicicleterias
-	INNER JOIN bicicletas bic ON bic.bicicleteriaId = bicicleterias.id 
-	WHERE bicicleterias.id = 2;
